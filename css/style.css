@@ -7,7 +7,13 @@
     src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 1200px) {
+    html {
+        background-color: hsl(29, 53%, 90%);
+        overscroll-behavior: none;
+        padding: 0 2rem;
+    }
+
     body {
         border-radius: 20px;
         background-color: var(--BG-COLOR);
@@ -16,9 +22,22 @@
     }
 
     img {
-        border-radius: 20px 20px 0 0;
+        
+        border-radius: 20px;
+        
+        width: 90px;
     }
 
+    .img {
+        margin: 0 2rem 2rem 2rem;
+        
+        
+
+    }
+
+    article {
+        padding-top: 2rem;
+    }
     
 }
 
@@ -43,9 +62,9 @@
 /* || GENERAL STYLES */
 
     html {
-        background-color: hsl(29, 53%, 90%);
+        
         overscroll-behavior: none;
-        padding: 0 2rem;
+        
     }
 
     body {
