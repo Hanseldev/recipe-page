@@ -1,0 +1,176 @@
+@font-face {
+    font-family: "Outfit";
+    src: url(../assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Young Serif";
+    src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
+}
+
+@media screen and (min-width: 500px) {
+    body {
+        border-radius: 20px;
+        background-color: var(--BG-COLOR);
+        margin: 3rem auto;
+        width: clamp(500px, 100%, 700px);
+    }
+
+    img {
+        border-radius: 20px 20px 0 0;
+    }
+
+    
+}
+
+:root {
+
+    /* --MAIN-BG-COLOR: hsl(29, 53%, 90%); */
+    --BROWN: hsl(14, 45%, 36%);
+    --SUBSECTION-BG-COLOR: hsl(332, 51%, 32%);
+    --HEADER-TEXT-COLOR: hsl(24, 5%, 18%);
+    --TEXT-COLOR:  hsl(30, 10%, 34%);
+    /* --BG-COLOR: hsl(330, 100%, 98%); */
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* || GENERAL STYLES */
+
+    html {
+        background-color: hsl(29, 53%, 90%);
+        overscroll-behavior: none;
+        padding: 0 2rem;
+    }
+
+    body {
+        background-color: #fff;
+        color: var(--TEXT-COLOR);
+        font-family: Outfit;
+        line-height: 1.5;
+        font-size: 16px;
+    }
+
+
+    section {
+        padding: 0 2rem;
+        margin: 2rem 0;
+    }
+
+    footer {
+        padding: 1rem;
+        text-align: center;
+
+    }
+
+    hr {
+        border: none;
+        height: 1px;
+        background-color: hsl(30, 18%, 87%);
+        margin: 0 3rem;
+    }
+    h1,
+    h2 {
+        font-family: "Young Serif", serif;
+    }
+
+    ul li::marker,
+    ol li::marker {
+        color: var(--BROWN);
+
+    }
+    
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    caption,
+    th {
+        font-weight: 400;
+        text-align: left;
+    }
+
+    th,
+    td {
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        padding-left: 1rem;
+    }
+
+    tr:not(:last-child) {
+        border-bottom: 1px solid hsl(30, 18%, 87%);
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+
+/* || CLASS STYLES */
+
+.prepTime {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: hsl(322, 100%, 98%);
+}
+
+.prepTime h2 {
+    margin-top: 0;
+}
+
+.prepTime ul li::marker {
+        color: var(--SUBSECTION-BG-COLOR);
+}
+
+.specialHeader {
+    color: var(--SUBSECTION-BG-COLOR);
+    font-size: 24px;
+    font-family: Outfit, Arial;
+}
+
+li {
+    margin-left: 1.5rem;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.omelette {
+    width: 100%;
+    height: auto;
+}
+
+.bigHeader {
+    font-weight: 400;
+    color: var(--HEADER-TEXT-COLOR);
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.brown {
+    font-weight: 600;
+    color: var(--BROWN);
+}
+
+
+/* || UTILITY CLASSES */
+
+.nowrap {
+    text-wrap: nowrap;
+}
+.bold {
+    font-weight: 600;
+    color: var(--HEADER-TEXT-COLOR);
+}
+.header {
+    font-weight: 400;
+    color: var(--BROWN);
+    margin: 1rem 0;
+}
