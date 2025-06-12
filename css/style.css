@@ -70,7 +70,7 @@
     body {
         background-color: #fff;
         color: var(--TEXT-COLOR);
-        font-family: Outfit, serif;
+        font-family: Outfit, Arial;
         line-height: 1.5;
         font-size: 16px;
     }
